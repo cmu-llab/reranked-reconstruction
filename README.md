@@ -47,7 +47,7 @@ Cuda GPU is recommended. Running the experiments with a `--cpu` flag will attemp
 
 ## WandB
 
-All experiments need rely on [WandB](https://wandb.ai/) for results logging and checkpointing[^1]. To set up WandB, create a `.env` file with your WandB entity and project in the following format:
+All experiments need rely on [WandB](https://wandb.ai/) for results logging and checkpointing[^1]. To set up WandB, modify the `.env` file with your WandB entity and project in the following format:
 
 ```txt
 WANDB_ENTITY = "awandbentity"
