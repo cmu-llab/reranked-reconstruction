@@ -6,7 +6,7 @@ This repository accompanies the paper Improved Neural Protoform Reconstruction v
 
 > **Abstract:** Protolanguage reconstruction is a central task in historical linguistics. The comparative method, one of the most influential theoretical and methodological frameworks in the history of the language sciences, allows linguists to infer protoforms (reconstructed ancestral words) from their reflexes (related modern words) based on the assumption of regular sound change. Not surprisingly, numerous computational linguists have attempted to operationalize comparative reconstruction through computational models. While these models have taken various forms, the most successful have been supervised encoder-decoder models, which treat the problem of predicting protoforms given sets of reflexes as a sequence-to-sequence problem. We argue that this framework ignores one of the most important aspects of the comparative method: not only should protoforms be inferable from cognate sets (sets of related reflexes) but the reflexes should be inferable from the protoforms. Leveraging another line of research—reflex prediction—we propose a system in which candidate protoforms from a reconstruction model are reranked by a reflex prediction model. We show that this more complete implementation of the comparative method allows us to surpass state-of-the-art protoform reconstruction methods on three of four Chinese and Romance datasets.
 
-🚧 This repository is under construction. We plan on making more checkpoints available.
+We provide demo checkpoints on this repository. The remaining checkpoints for our reranked reconstruction experiments are available on [Hugging Face](https://huggingface.co/chaosarium/reranked-reconstruction).
 
 # Set up
 
@@ -43,11 +43,11 @@ python-dotenv==1.0.0
 
 ## GPU support
 
-Cuda GPU is recommended. Running the experiments with a `--cpu` flag will attempt to run on them the CPU.
+Cuda GPU is recommended. Running the experiments with a `--cpu` flag will attempt to use the CPU.
 
 ## WandB
 
-All experiments need rely on [WandB](https://wandb.ai/) for results logging and checkpointing[^1]. To set up WandB, modify the `.env` file with your WandB entity and project in the following format:
+All experiments rely on [WandB](https://wandb.ai/) for results logging and checkpointing[^1]. To set up WandB, modify the `.env` file with your WandB entity and project in the following format:
 
 ```txt
 WANDB_ENTITY = "awandbentity"
@@ -57,8 +57,8 @@ WANDB_PROJECT = "awandbproject"
 [^1]: We used the following tagging taxonomy to identify experiments on WandB:
     - `from-config` pretrains a reconstruction or reflex-prediction model
     - `beam_size_adjustment` evaluates a GRU-BS model under a different beam size
-    - `reranking_eval2_fixed_beam_fixed_ratio` runs reranking experiment with a fixed beam size and score adjustment constant
-    - `reranking_eval2_worse_d2p_fixed_beam_fixed_ratio` runs reranking experiment with a fixed beam size and score adjustment constant with the lowest performing reconstruction model
+    - `reranking_eval2_fixed_beam_fixed_ratio` runs a reranking experiment with a fixed beam size and score adjustment constant
+    - `reranking_eval2_worse_d2p_fixed_beam_fixed_ratio` runs a reranking experiment with a fixed beam size and score adjustment constant with the lowest performing reconstruction model
 
 ## Datasets
 
@@ -72,11 +72,13 @@ We used the following dataset naming convention in our code:
 
 [^2]: The prefix `N` has no meaning other than identifying it as the same version used by Kim et al. (2023)
 
-The Romance datasets is not available for redistribution. Please contact Ciobanu and Dinu (2014) to obtain their data.
+The Romance datasets are not available for redistribution. Please contact Ciobanu and Dinu (2014) to obtain their data.
 
 # Evaluating Checkpoints
 
-`run_checkpoints.ipynb` provides a walkthrough on loading our checkpoints and evaluating a reranked reconstruction system as well as its components.
+`run_checkpoints.ipynb` provides a walkthrough on loading our checkpoints and evaluating a reranked reconstruction system as well as its components. 
+
+`demo_checkpoints` only provides two checkpoints on WikiHan as a demo for our reranked reconstruction system. The complete set of checkpoints for reranked reconstruction experiments is available on [Hugging Face](https://huggingface.co/chaosarium/reranked-reconstruction).
 
 # Training[^3]
 
