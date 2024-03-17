@@ -110,31 +110,31 @@ python test_with_different_beam_size.py dat1za2h
 # WikiHan
 python main.py --config best_hparams/p2d-wikihan-GRU.pkl # baseline GRU
 python main.py --config best_hparams/p2d-wikihan-JambuGRU.pkl # Arora et al. (2023)'s GRU
-python main.py --config best_hparams/p2d-wikihan-JambuTransformer.pkl # Arora et al. (2023)'s GRU
+python main.py --config best_hparams/p2d-wikihan-JambuTransformer.pkl # Arora et al. (2023)'s Transformer
 python main.py --config best_hparams/p2d-wikihan-Transformer.pkl # Kim et al. (2023)'s Transformer
 
 # WikiHan-aug
 python main.py --config best_hparams/p2d-wikihan_augmented-GRU.pkl # baseline GRU
 python main.py --config best_hparams/p2d-wikihan_augmented-JambuGRU.pkl # Arora et al. (2023)'s GRU
-python main.py --config best_hparams/p2d-wikihan_augmented-JambuTransformer.pkl # Arora et al. (2023)'s GRU
+python main.py --config best_hparams/p2d-wikihan_augmented-JambuTransformer.pkl # Arora et al. (2023)'s Transformer
 python main.py --config best_hparams/p2d-wikihan_augmented-Transformer.pkl # Kim et al. (2023)'s Transformer
 
 # Hóu
 python main.py --config best_hparams/p2d-baxter-GRU.pkl # baseline GRU
 python main.py --config best_hparams/p2d-baxter-JambuGRU.pkl # Arora et al. (2023)'s GRU
-python main.py --config best_hparams/p2d-baxter-JambuTransformer.pkl # Arora et al. (2023)'s GRU
+python main.py --config best_hparams/p2d-baxter-JambuTransformer.pkl # Arora et al. (2023)'s Transformer
 python main.py --config best_hparams/p2d-baxter-Transformer.pkl # Kim et al. (2023)'s Transformer
 
 # Rom-phon
 python main.py --config best_hparams/p2d-Nromance_ipa-GRU.pkl # baseline GRU
 python main.py --config best_hparams/p2d-Nromance_ipa-JambuGRU.pkl # Arora et al. (2023)'s GRU
-python main.py --config best_hparams/p2d-Nromance_ipa-JambuTransformer.pkl # Arora et al. (2023)'s GRU
+python main.py --config best_hparams/p2d-Nromance_ipa-JambuTransformer.pkl # Arora et al. (2023)'s Transformer
 python main.py --config best_hparams/p2d-Nromance_ipa-Transformer.pkl # Kim et al. (2023)'s Transformer
 
 # Rom-orth
 python main.py --config best_hparams/p2d-Nromance_orto-GRU.pkl # baseline GRU
 python main.py --config best_hparams/p2d-Nromance_orto-JambuGRU.pkl # Arora et al. (2023)'s GRU
-python main.py --config best_hparams/p2d-Nromance_orto-JambuTransformer.pkl # Arora et al. (2023)'s GRU
+python main.py --config best_hparams/p2d-Nromance_orto-JambuTransformer.pkl # Arora et al. (2023)'s Transformer
 python main.py --config best_hparams/p2d-Nromance_orto-Transformer.pkl # Kim et al. (2023)'s Transformer
 ```
 
