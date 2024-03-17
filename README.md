@@ -78,9 +78,9 @@ The Romance datasets is not available for redistribution. Please contact Ciobanu
 
 `run_checkpoints.ipynb` provides a walkthrough on loading our checkpoints and evaluating a reranked reconstruction system as well as its components.
 
-# Training
+# Training[^3]
 
-In code, reflex prediction is called `p2d`, and reconstruction is called `d2p`.
+[^3]: In the code, reflex prediction is referred to as `p2d`, and reconstruction is referred to as `d2p`.
 
 ## Baseline Reconstruction Models
 
