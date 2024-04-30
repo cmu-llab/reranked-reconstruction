@@ -2,7 +2,7 @@
 
 This repository accompanies the paper Improved Neural Protoform Reconstruction via Reflex Prediction at LREC-COLING 2024.
 
-![reranked-recon-demo](https://github.com/cmu-llab/reranked-reconstruction/assets/38693485/29d3e14a-158f-469b-95c5-2e3c5ffef096)
+![reranked-recon-demo-cropped](https://github.com/cmu-llab/reranked-reconstruction/assets/38693485/afe838ff-ab53-4a37-b86d-e7b436864fb5)
 
 
 > **Abstract:** Protolanguage reconstruction is central to historical linguistics. The comparative method, one of the most influential theoretical and methodological frameworks in the history of the language sciences, allows linguists to infer protoforms (reconstructed ancestral words) from their reflexes (related modern words) based on the assumption of regular sound change. Not surprisingly, numerous computational linguists have attempted to operationalize comparative reconstruction through various computational models, the most successful of which have been supervised encoder-decoder models, which treat the problem of predicting protoforms given sets of reflexes as a sequence-to-sequence problem. We argue that this framework ignores one of the most important aspects of the comparative method: not only should protoforms be inferable from cognate sets (sets of related reflexes) but the reflexes should also be inferable from the protoforms. Leveraging another line of research—reflex prediction—we propose a system in which candidate protoforms from a reconstruction model are reranked by a reflex prediction model. We show that this more complete implementation of the comparative method allows us to surpass state-of-the-art protoform reconstruction methods on three of four Chinese and Romance datasets.
